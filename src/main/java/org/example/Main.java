@@ -13,7 +13,19 @@ public class Main {
         carReferance.doorCount = 2;
         carReferance.color = "black";
 
-        
+        Engine engine1 = new Engine();
+        engine1.manufracturer = "Ferrari";
+        engine1.capacity = 3000;
+
+        carReferance.engine = engine1;
+
+        //System.out.println("Engine1 capacity "+ engine1.capacity);
+        System.out.println("Car engine1 capacity " + carReferance.engine.capacity);
+
+        engine1.capacity = 4000;
+        System.out.println("Car engine1 capacity after update " + carReferance.engine.capacity);
+
+
         //concatenation
         System.out.println("Name of car " + carReferance.name);
         System.out.println("Max speed: " + carReferance.maxSpeed);
@@ -30,6 +42,9 @@ public class Main {
         car2.fuelLevel = 50;
         car2.totalTraveledDistance = 100;
 
+        car2.engine = new Engine();
+        car2.engine.capacity = 2000;
+
         System.out.println("Name of car " + car2.name);
         System.out.println("Max speed: " + car2.maxSpeed);
         System.out.println("Fuel lever: " + car2.fuelLevel);
@@ -38,6 +53,8 @@ public class Main {
         System.out.println("Damaged: " + car2.damaged);
         System.out.println("Door count: " + car2.doorCount);
         System.out.println("Color: " + car2.color);
+        System.out.println("Car2 engine capacity " + carReferance.engine.capacity);
+
 
         System.out.println("Initial name for car1: " + carReferance.name);
 
